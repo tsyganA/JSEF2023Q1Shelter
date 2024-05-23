@@ -19,18 +19,21 @@ header {
 .head-house {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 .agile {
-    display: flex;
+    /* display: flex; */
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .agile2 {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .about-head {
@@ -150,7 +153,7 @@ nav ul li a:hover {
 }
 
 .not-only {
-    display: flex;
+    display: block;
     background: url("img/noise_transparent.png"),
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
         #211f20;
@@ -162,8 +165,8 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    width: 310px;
-    height: 114px;
+    max-width: 310px;
+    /* height: 114px; */
     margin-top: 254px;
     margin-bottom: 40px;
     color: #ffffff;
@@ -175,8 +178,8 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    width: 460px;
-    height: 72px;
+    max-width: 460px;
+    /* height: 72px; */
     color: #cdcdcd;
     margin-bottom: 42px;
 }
@@ -203,8 +206,10 @@ nav ul li a:hover {
 }
 
 .not-only img {
-    margin-top: 90px;
-    margin-left: 40px;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 90px;
+    margin-left: 40px; */
 }
 
 .noly {
@@ -212,7 +217,7 @@ nav ul li a:hover {
 }
 
 .about {
-    display: flex;
+    display: block;
 }
 
 .about img {
@@ -228,8 +233,8 @@ nav ul li a:hover {
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #545454;
-    width: 370px;
-    height: 90px;
+    max-width: 370px;
+    /* height: 90px; */
     margin-top: 90px;
     margin-left: 120px;
     margin-bottom: 25px;
@@ -242,8 +247,8 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 160%;
     color: #4c4c4c;
-    width: 430px;
-    height: 96px;
+    max-width: 430px;
+    /* height: 96px; */
     margin-left: 120px;
 }
 
@@ -254,8 +259,8 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 160%;
     color: #4c4c4c;
-    width: 430px;
-    height: 144px;
+    max-width: 430px;
+    /* height: 144px; */
     margin-top: 24px;
     margin-left: 120px;
     margin-bottom: 85px;
@@ -779,7 +784,7 @@ nav ul li a:hover {
 }
 
 .in-addition {
-    display: flex;
+    display: block;
     background: #f6f6f6;
 }
 
@@ -1163,15 +1168,15 @@ footer h2 {
     }
 
     .head-house {
-        width: 710px;
+        /* width: 710px; */
     }
 
     .agile {
-        width: 710px;
+        /* max-width: 710px; */
     }
 
     .agile2 {
-        width: 710px;
+        /* max-width: 710px; */
     }
 
     .not-only h1 {
@@ -1188,14 +1193,14 @@ footer h2 {
     }
 
     .not-only img {
-        width: 569px;
-        height: 593px;
-        margin-left: 140px;
-        margin-top: 100px;
+        /* width: 569px;
+        height: 593px; */
+        /* margin-left: 140px;
+        margin-top: 100px; */
     }
 
     .noly {
-        display: inline;
+        /* display: inline; */
     }
 
     .coho {
@@ -1239,7 +1244,7 @@ footer h2 {
     }
 
     .pet-str {
-        width: 700px;
+        /* width: 700px; */
     }
 
     .youcan {
@@ -1442,15 +1447,15 @@ footer h2 {
     }
 
     .head-house {
-        width: 310px;
+        /* width: 310px; */
     }
 
     .agile {
-        width: 310px;
+        /* max-width: 310px; */
     }
 
     .agile2 {
-        width: 380px;
+        /* max-width: 380px; */
     }
 
     nav {
@@ -1463,25 +1468,25 @@ footer h2 {
 
     .not-only h1 {
         font-size: 25px;
-        width: 200px;
-        height: 64px;
+        max-width: 200px;
+        /* height: 64px; */
         letter-spacing: 0.06em;
-        margin-top: 36px;
+        margin-top: 0;
         margin-left: 63px;
         margin-bottom: 43px;
         text-align: center;
     }
 
     .not-only img {
-        margin-top: 105px;
-        margin-left: 53px;
-        width: 260px;
-        height: 271.77px;
+        /* margin-top: 105px;
+        margin-left: 53px; */
+        /* width: 260px;
+        height: 271.77px; */
     }
 
     .not-only p {
-        width: 300px;
-        height: 96px;
+        /* max-width: 300px; */
+        /* height: 96px; */
         text-align: center;
         margin-left: 13px;
     }
@@ -1582,23 +1587,23 @@ footer h2 {
 
     .about h2 {
         font-size: 25px;
-        width: 250px;
-        height: 64px;
+        max-width: 250px;
+        /* height: 64px; */
         text-align: center;
         margin-top: 36px;
         margin-left: 38px;
     }
 
     .about p:nth-child(2) {
-        width: 270px;
-        height: 144px;
+        max-width: 270px;
+        /* height: 144px; */
         margin-left: 27px;
         text-align: justify;
     }
 
     .about p:nth-child(3) {
-        width: 270px;
-        height: 144px;
+        max-width: 270px;
+        /* height: 144px; */
         margin-left: 27px;
         text-align: justify;
     }
@@ -1719,7 +1724,7 @@ footer h2 {
     }
 
     .pet-str {
-        width: 251px;
+        /* width: 251px; */
         column-gap: 50px;
         justify-content: left;
         margin-left: 53px;
