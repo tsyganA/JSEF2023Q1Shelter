@@ -17,12 +17,25 @@ header {
 }
 
 .head-house {
-    display: flex;
+    /* display: flex;
     margin: 0 auto;
     max-width: 1200px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 30px; */
+    margin: auto;
+    padding: 0 40px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cozy-house {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 185.7px;
 }
 
 .agile {
@@ -50,20 +63,20 @@ header {
     border-bottom: 3px solid #f1cdb3;
 }
 
-.head nav ul {
+/* .head nav ul {
     display: flex;
     justify-content: space-between;
     width: 443px;
     margin-left: 530px;
     margin-top: 40px;
     margin-bottom: 50px;
-}
+} */
 
 .header nav ul {
     display: flex;
     justify-content: space-between;
     width: 443px;
-    margin-left: 530px;
+    /* margin-left: 530px; */
     margin-top: 40px;
 }
 
@@ -167,7 +180,7 @@ nav ul li a:hover {
     line-height: 130%;
     max-width: 310px;
     /* height: 114px; */
-    margin-top: 254px;
+    margin-top: 166px;
     margin-bottom: 40px;
     color: #ffffff;
 }
@@ -207,13 +220,16 @@ nav ul li a:hover {
 
 .not-only img {
     width: 100%;
-    height: 100%;
+    height: 728px;
     /* margin-top: 90px;
     margin-left: 40px; */
 }
 
 .noly {
     display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    max-width: 1200px;
 }
 
 .about {
@@ -221,8 +237,8 @@ nav ul li a:hover {
 }
 
 .about img {
-    margin-left: 174px;
-    margin-top: 76px;
+    /* margin-left: 174px;
+    margin-top: 76px; */
 }
 
 .about h2 {
@@ -235,8 +251,8 @@ nav ul li a:hover {
     color: #545454;
     max-width: 370px;
     /* height: 90px; */
-    margin-top: 90px;
-    margin-left: 120px;
+    margin-top: 12px;
+    /* margin-left: 120px; */
     margin-bottom: 25px;
 }
 
@@ -249,7 +265,7 @@ nav ul li a:hover {
     color: #4c4c4c;
     max-width: 430px;
     /* height: 96px; */
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 
 .about p:nth-child(3) {
@@ -262,12 +278,16 @@ nav ul li a:hover {
     max-width: 430px;
     /* height: 144px; */
     margin-top: 24px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     margin-bottom: 85px;
 }
 
 .coho {
     display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 0 0px;
 }
 
 .pets-kajewo {
@@ -791,7 +811,8 @@ nav ul li a:hover {
 .donation-dog {
     /* width: 505px;
     height: 261px; */
-    margin: 90px 0 110px 143px;
+    /* margin: 90px 0 110px 143px; */
+    margin: 0 0 16px 0;
     order: 1;
 }
 
@@ -809,8 +830,9 @@ nav ul li a:hover {
     letter-spacing: 0.06em;
     color: #545454;
     max-width: 300px;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    /* margin-top: 80px; */
+    /* margin-bottom: 20px; */
 }
 
 .younamelegal p:nth-child(2) {
@@ -820,7 +842,7 @@ nav ul li a:hover {
     font-size: 15px;
     line-height: 110%;
     color: #545454;
-    height: 17px;
+    /* height: 17px; */
     letter-spacing: 0.06em;
 }
 
@@ -860,15 +882,20 @@ nav ul li a:hover {
     color: #b2b2b2;
     max-width: 380px;
     /* height: 72px; */
-    margin-top: 20px;
+    margin: 19px 0 20px 0;
 }
 
 .youcan {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
 }
 
 footer {
-    display: flex;
+    display: block;
     background: url(noise_lines_transparent@2X.png),
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
         #211f20;
@@ -882,21 +909,26 @@ footer h2 {
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #ffffff;
-    width: 280px;
-    margin-top: 57px;
+    max-width: 280px;
+    margin: 17px 0 0 0;
 }
 
 .footer-puppy {
-    margin-top: 40px;
-    margin-left: 160px;
+    /* margin-top: 40px;
+    margin-left: 160px; */
 }
 
 .forwe {
     display: flex;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
 }
 
 .forweimg {
-    display: flex;
+    /* display: flex; */
 }
 
 .email {
@@ -922,10 +954,12 @@ footer h2 {
 }
 
 .weare {
-    margin-left: 157px;
+    /* margin-left: 157px; */
 }
 
 .weare span {
+    display: flex;
+    align-items: center;
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
@@ -934,10 +968,8 @@ footer h2 {
     letter-spacing: 0.06em;
     color: #f1cdb3;
     margin-left: 19px;
-    width: 260px;
-    height: 46px;
-    display: flex;
-    align-items: center;
+    max-width: 260px;
+    /* height: 46px; */
 }
 
 .weare a {
@@ -1182,16 +1214,16 @@ footer h2 {
     }
 
     .not-only h1 {
-        margin: 60px 0 40px 123px;
+        margin: 60px 0 40px 0;
     }
 
     .not-only p {
-        margin-left: 123px;
+        /* margin-left: 123px; */
         margin-bottom: 41px;
     }
 
     .not-only button {
-        margin-left: 250px;
+        /* margin-left: 250px; */
     }
 
     .not-only img {
@@ -1199,10 +1231,12 @@ footer h2 {
         height: 593px; */
         /* margin-left: 140px;
         margin-top: 100px; */
+        height: 100%;
+        
     }
 
     .noly {
-        /* display: inline; */
+        display: inline;
     }
 
     .coho {
@@ -1309,6 +1343,10 @@ footer h2 {
         margin-top: 0;
         padding-bottom: 75px;
     }
+
+    /* .pets-kajewo {
+        max-width: 200px;
+    } */
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1345,6 +1383,7 @@ footer h2 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
+        width: 270px;
     }
 
     @keyframes move-right {
@@ -1483,6 +1522,7 @@ footer h2 {
     }
 
     .not-only img {
+        height: 100%;
         /* margin-top: 105px;
         margin-left: 53px; */
         /* width: 260px;
@@ -1508,7 +1548,7 @@ footer h2 {
 
     .burgert {
         display: block;
-        margin: 33px 0px 36px 55px;
+        margin: 33px 0px 36px 0px;
         z-index: 12;
         transition: all 0.5s ease-in;
     }
@@ -1617,8 +1657,8 @@ footer h2 {
         margin-left: 35px;
         margin-top: 50px;
         margin-bottom: 20px;
-        width: 260px;
-        height: 353.6px;
+        max-width: 90%;
+        /* height: 353.6px; */
     }
 
     .our-friends h2 {
@@ -1829,8 +1869,8 @@ footer h2 {
     }
 
     .footer-puppy {
-        width: 260px;
-        height: 269px;
+        max-width: 90%;
+        /* height: 269px; */
         margin-top: 30px;
         margin-left: 35px;
     }
