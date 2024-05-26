@@ -910,7 +910,7 @@ footer h2 {
     letter-spacing: 0.06em;
     color: #ffffff;
     max-width: 280px;
-    margin: 17px 0 0 0;
+    margin: 0;
 }
 
 .footer-puppy {
@@ -932,8 +932,18 @@ footer h2 {
 }
 
 .email {
-    margin-top: 41px;
-    margin-bottom: 43px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 41px;
+    margin-bottom: 43px; */
+}
+
+.email-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0 60px 0;
+    max-width: 294px;
 }
 
 .email-phone span {
@@ -955,6 +965,12 @@ footer h2 {
 
 .weare {
     /* margin-left: 157px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0 60px 0;
+    max-width: 315px;
+
 }
 
 .weare span {
@@ -973,13 +989,17 @@ footer h2 {
 }
 
 .weare a {
-    text-decoration: none;
     display: flex;
+    text-decoration: none;
+    align-items: center;
 }
 
 .boston {
-    margin-top: 32px;
-    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 32px;
+    margin-bottom: 25px; */
+    
 }
 
 /* section OUR-FRIENDS-PETS STYLE start */
@@ -1194,7 +1214,7 @@ footer h2 {
     }
 
     .header nav ul {
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     .head nav ul {
@@ -1214,7 +1234,7 @@ footer h2 {
     }
 
     .not-only h1 {
-        margin: 60px 0 40px 0;
+        margin: 0px 0 40px 0;
     }
 
     .not-only p {
@@ -1232,11 +1252,19 @@ footer h2 {
         /* margin-left: 140px;
         margin-top: 100px; */
         height: 100%;
+        width: 82%;
+        /* padding-left: 150px; */
+        /* margin-top: 100px; */
+        /* margin-left: 150px; */
         
     }
 
     .noly {
-        display: inline;
+        /* display: inline; */
+        max-width: 768px;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 30px 0;
     }
 
     .coho {
@@ -1347,6 +1375,17 @@ footer h2 {
     /* .pets-kajewo {
         max-width: 200px;
     } */
+
+    .makeafriend_button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .img_puppy {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
