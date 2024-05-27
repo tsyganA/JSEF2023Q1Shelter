@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     padding: 0 30px; */
     margin: auto;
-    padding: 0 40px;
+    padding: 30px 40px 0 40px;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -76,8 +76,9 @@ header {
     display: flex;
     justify-content: space-between;
     width: 443px;
+    /* align-items: center; */
     /* margin-left: 530px; */
-    margin-top: 40px;
+    /* margin-top: 35px; */
 }
 
 nav ul li {
@@ -122,8 +123,8 @@ nav ul li a:hover {
     line-height: 110%;
     color: #f1cdb3;
     letter-spacing: 0.06em;
-    margin-top: 24px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 9px;
 }
 
 .cozy-house-bet p {
@@ -220,7 +221,7 @@ nav ul li a:hover {
 
 .not-only img {
     width: 100%;
-    height: 728px;
+    /* height: 100%; */
     /* margin-top: 90px;
     margin-left: 40px; */
 }
@@ -228,7 +229,7 @@ nav ul li a:hover {
 .noly {
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
+    padding-top: 88px;
     max-width: 1200px;
 }
 
@@ -279,7 +280,7 @@ nav ul li a:hover {
     /* height: 144px; */
     margin-top: 24px;
     /* margin-left: 120px; */
-    margin-bottom: 85px;
+    margin-bottom: 112px;
 }
 
 .coho {
@@ -647,8 +648,9 @@ nav ul li a:hover {
     color: #545454;
     text-align: center;
     height: 90px;
-    padding-top: 82px;
-    margin-bottom: 60px;
+    padding-top: 83px;
+    padding-bottom: 60px;
+    margin: 0;
 }
 
 .our-friends-pets h2 {
@@ -756,11 +758,16 @@ nav ul li a:hover {
     border-radius: 100px;
     width: 261px;
     height: 52px;
-    margin: 59px 0 97px 470px;
+    margin: 59px 0 97px 0;
     border: transparent;
     cursor: pointer;
     text-decoration: none;
     color: #292929;
+}
+
+.get-know_btn {
+    display: flex;
+    justify-content: center;
 }
 
 .get-know:hover {
@@ -1251,8 +1258,8 @@ footer h2 {
         height: 593px; */
         /* margin-left: 140px;
         margin-top: 100px; */
-        height: 100%;
-        width: 82%;
+        /* height: 100%; */
+        /* width: 100%; */
         /* padding-left: 150px; */
         /* margin-top: 100px; */
         /* margin-left: 150px; */
@@ -1261,34 +1268,42 @@ footer h2 {
 
     .noly {
         /* display: inline; */
-        max-width: 768px;
+        /* max-width: 768px; */
         flex-direction: column;
         align-items: center;
         padding: 60px 30px 0;
     }
 
     .coho {
-        display: flex;
+        /* display: flex; */
         flex-direction: column-reverse;
+        max-width: 430px;
+        padding: 69px 0 0px;
+    }
+
+    .about-pets_img {
+        display: flex;
+        justify-content: center;
     }
 
     .about h2 {
-        margin-top: 80px;
-        margin-left: 140px;
+        /* margin-top: 80px;
+        margin-left: 140px; */
     }
 
     .about p:nth-child(2) {
-        margin-left: 140px;
+        /* margin-left: 140px; */
     }
 
     .about p:nth-child(3) {
-        margin-left: 140px;
+        /* margin-left: 140px; */
+        margin-bottom: 81px;
     }
 
     .about img {
-        margin-left: 205px;
+        /* margin-left: 205px; */
         margin-top: 0;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
 
     .kajewo {
@@ -1304,7 +1319,7 @@ footer h2 {
     }
 
     .get-know {
-        margin-left: 224px;
+        /* margin-left: 224px; */
     }
 
     .pet-str {
@@ -1312,22 +1327,23 @@ footer h2 {
     }
 
     .youcan {
-        display: block;
+        /* display: block; */
         /* order: 2; */
         /* display: flex; */
-        /* flex-direction: column-reverse; */
+        flex-direction: column-reverse;
     }
 
     .younamelegal {
-        margin-left: 163px;
+        margin-left: 0;
+        /* justify-content: center; */
     }
 
     .younamelegal h2 {
-        margin-top: 84px;
+        margin-top: 4px;
     }
 
     .donation-dog {
-        margin: 47px 0 100px 100px;
+        margin: 47px 0 12px 0;
         /* order:1; */
     }
 
@@ -1335,21 +1351,27 @@ footer h2 {
         display: inline;
     }
 
+    .forwe {
+        padding: 15px 47px 0;
+        flex-wrap: wrap;
+        justify-content: space-around;    }
+
     footer h2 {
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     .email-phone {
-        margin-left: 34px;
+        height: 234px;
+        /* margin-left: 0; */
     }
 
     .weare {
-        margin-left: 57px;
+        /* margin-left: 0; */
     }
 
     .footer-puppy {
-        margin-top: 50px;
-        margin-left: 200px;
+        /* margin-top: 50px;
+        margin-left: 200px; */
     }
 
     .kajewo-pet div:nth-child(7) {
@@ -1372,19 +1394,37 @@ footer h2 {
         padding-bottom: 75px;
     }
 
-    /* .pets-kajewo {
-        max-width: 200px;
-    } */
+    .pets-kajewo {
+        justify-content: center;
+    }
 
     .makeafriend_button {
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
+        margin-bottom: 97px;
     }
 
     .img_puppy {
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
+        align-self: flex-end;
+        max-width: 35.5625rem;
+        /* max-width: 369px; */
+    }
+
+    .our-friends h2 {
+        padding-top: 79px;
+    }
+
+    .younamelegal
+    .kajewo button {
+        margin-top: 0;
+        /* margin-bottom: 27px; */
+    }
+
+    .kajewo button {
+        margin-top: 0;
+        /* margin-bottom: 27px; */
     }
 }
 
@@ -1531,6 +1571,7 @@ footer h2 {
 
     .head-house {
         /* width: 310px; */
+        padding: 20px 65px 0 65px;
     }
 
     .agile {
@@ -1546,7 +1587,12 @@ footer h2 {
     }
 
     .noly {
-        display: inline;
+        /* display: inline; */
+        /* max-width: 768px; */
+        flex-direction: column;
+        align-items: center;
+        /* padding-top: 62px; */
+        padding: 62px 10px 0;
     }
 
     .not-only h1 {
@@ -1555,13 +1601,17 @@ footer h2 {
         /* height: 64px; */
         letter-spacing: 0.06em;
         margin-top: 0;
-        margin-left: 63px;
-        margin-bottom: 43px;
+        /* margin-left: 63px; */
+        margin-bottom: 25px;
         text-align: center;
     }
 
     .not-only img {
-        height: 100%;
+        /* height: 100%; */
+        width: 66%;
+        /* align-self: flex-end;
+        /* object-fit: contain;
+    object-position: bottom; */
         /* margin-top: 105px;
         margin-left: 53px; */
         /* width: 260px;
@@ -1569,25 +1619,25 @@ footer h2 {
     }
 
     .not-only p {
-        /* max-width: 300px; */
+        max-width: 300px;
         /* height: 96px; */
         text-align: center;
-        margin-left: 13px;
+        /* margin-left: 13px; */
     }
 
     .cozy-house {
-        margin-left: 23px;
+        /* margin-left: 23px; */
     }
 
     .not-only button {
-        margin-left: 58px;
+        /* margin-left: 58px; */
     }
 
     /* burger start */
 
     .burgert {
         display: block;
-        margin: 33px 0px 36px 0px;
+        margin: 0;
         z-index: 12;
         transition: all 0.5s ease-in;
     }
@@ -1662,11 +1712,14 @@ footer h2 {
 
     .cozy-house p {
         width: 195px;
+        /* margin-top: 0; */
     }
 
     .coho {
-        display: flex;
+        /* display: flex; */
         flex-direction: column-reverse;
+        /* justify-content: center; */
+        padding: 9px 0 0;
     }
 
     .about h2 {
@@ -1674,29 +1727,32 @@ footer h2 {
         max-width: 250px;
         /* height: 64px; */
         text-align: center;
-        margin-top: 36px;
-        margin-left: 38px;
+        margin-top: 35px;
+        margin-bottom: 7px;
+        /* margin-left: 38px; */
     }
 
     .about p:nth-child(2) {
         max-width: 270px;
         /* height: 144px; */
-        margin-left: 27px;
+        /* margin-left: 27px; */
         text-align: justify;
     }
 
     .about p:nth-child(3) {
         max-width: 270px;
+        margin-top: 7px;
         /* height: 144px; */
-        margin-left: 27px;
+        /* margin-left: 27px; */
         text-align: justify;
+        margin-bottom: 0;
     }
 
     .about img {
-        margin-left: 35px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        max-width: 90%;
+        /* margin-left: 35px; */
+        margin-top: 42px;
+        margin-bottom: 44px;
+        width: 63%;
         /* height: 353.6px; */
     }
 
@@ -2097,5 +2153,33 @@ footer h2 {
         margin-top: 0px;
         padding-bottom: 2px;
         margin-left: 17px;
+    }
+
+    .not_friend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 106px 0;
+    }
+
+    .img_puppy {
+        display: flex;
+        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
+        /* align-self: flex-end;
+        max-width: 35.5625rem; */
+        /* max-width: 369px; */
+    }
+
+    .about_current {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-pets_img {
+        display: flex;
+        justify-content: center;
     }
 }
