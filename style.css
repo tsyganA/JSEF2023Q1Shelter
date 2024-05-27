@@ -47,6 +47,7 @@ header {
 .agile2 {
     margin: 0 auto;
     max-width: 1200px;
+    
 }
 
 .about-head {
@@ -1580,6 +1581,9 @@ footer h2 {
 
     .agile2 {
         /* max-width: 380px; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     nav {
@@ -1608,7 +1612,7 @@ footer h2 {
 
     .not-only img {
         /* height: 100%; */
-        width: 66%;
+        width: 67%;
         /* align-self: flex-end;
         /* object-fit: contain;
     object-position: bottom; */
@@ -1758,9 +1762,10 @@ footer h2 {
 
     .our-friends h2 {
         font-size: 25px;
-        padding-top: 42px;
-        margin-bottom: 15px;
-        margin-left: 15px;
+        padding-top: 46px;
+        padding-bottom: 15px;
+        /* margin-bottom: 15px; */
+        /* margin-left: 15px; */
     }
 
     .our-friends-pets h2 {
@@ -1801,7 +1806,7 @@ footer h2 {
     .get-know {
         margin-left: 0;
         margin-top: 0;
-        margin-left: 65px;
+        /* margin-left: 65px; */
         margin-bottom: 40px;
     }
 
@@ -1809,7 +1814,7 @@ footer h2 {
         font-size: 25px;
         margin-top: 42px;
         margin-bottom: 30px;
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
 
     .help p {
@@ -1864,10 +1869,10 @@ footer h2 {
     }
 
     .pet-str {
-        /* width: 251px; */
+        width: 251px;
         column-gap: 50px;
         justify-content: left;
-        margin-left: 53px;
+        /* margin-left: 53px; */
         margin-bottom: 25px;
     }
 
@@ -1877,7 +1882,10 @@ footer h2 {
 
     .youcan {
         display: block;
-        /* flex-direction: column-reverse; */
+        padding: 0;
+        /* flex-direction: column-reverse;
+        align-items: center; */
+        /* flex-direction: column; */
     }
 
     .younamelegal h2 {
@@ -1885,20 +1893,20 @@ footer h2 {
         text-align: center;
         max-width: 220px;
         margin-top: 44px;
-        margin-left: 30px;
-        margin-bottom: 20px;
+        /* margin-left: 30px; */
+        margin-bottom: 5px;
     }
 
     .younamelegal p:nth-child(2) {
         line-height: 160%;
         letter-spacing: 0;
-        margin-left: 3px;
+        /* margin-left: 3px; */
     }
 
     .younamelegal button {
         width: 281px;
         height: 43px;
-        margin-top: 27px;
+        margin-top: 6px;
     }
 
     .younamelegal button span {
@@ -1915,17 +1923,21 @@ footer h2 {
     .donation-dog {
         /* width: 260px;
         height: 135.2px; */
-        margin: 30px 0 42px 32px;
-        max-width: 90%;
+        margin: 30px 0 42px 0;
+        max-width: 65%;
 
     }
 
     .younamelegal {
-        margin-left: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
     }
 
     .forweimg {
         display: inline;
+        /* align-items: center; */
     }
 
     .forwe {
@@ -2182,4 +2194,11 @@ footer h2 {
         display: flex;
         justify-content: center;
     }
+
+    .addit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
