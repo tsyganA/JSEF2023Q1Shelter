@@ -31,6 +31,15 @@ header {
     justify-content: space-between;
 }
 
+.head-house-pet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 40px;
+    max-width: 1200px;
+}
+
 .cozy-house {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +137,14 @@ nav ul li a:hover {
     margin-bottom: 9px;
 }
 
+.cozy-house-bet {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    width: 350px;
+}
+
 .cozy-house-bet p {
     font-family: "Georgia";
     font-style: normal;
@@ -136,8 +153,8 @@ nav ul li a:hover {
     line-height: 110%;
     color: #545454;
     letter-spacing: 0.06em;
-    margin-top: 24px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 9px;
 }
 
 .cozy-house-bet a {
@@ -305,6 +322,13 @@ nav ul li a:hover {
     }
 }
 
+
+.headul {
+    display: flex;
+    justify-content: space-between;
+    width: 443px;
+}
+
 .transition-right {
     animation-name: move-right;
     animation-duration: 2s;
@@ -352,6 +376,7 @@ nav ul li a:hover {
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
+    margin-bottom: 30px;
 }
 
 .our-friends__card__btn {
@@ -600,7 +625,7 @@ nav ul li a:hover {
     border-radius: 100px;
     width: 187px;
     height: 52px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-bottom: 27px;
     background: #fafafa;
     cursor: pointer;
@@ -708,9 +733,9 @@ nav ul li a:hover {
     background: #f6f6f6;
 }
 
-.our-friends-pets {
+/* .our-friends-pets {
     background: #f6f6f6;
-}
+} */
 
 .btn-left {
     border: 2px solid #f1cdb3;
@@ -1037,7 +1062,7 @@ footer h2 {
 
 .our-friends-pets {
     padding-top: 28px;
-    padding-bottom: 99px;
+    padding-bottom: 103px;
     background: #f6f6f6;
 }
 
@@ -1103,6 +1128,10 @@ footer h2 {
 /* section OUR-FRIENDS-PETS STYLE end */
 
 .burgert {
+    display: none;
+}
+
+.burger-pet {
     display: none;
 }
 
@@ -1226,11 +1255,15 @@ footer h2 {
     }
 
     .head nav ul {
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     .head-house {
         /* width: 710px; */
+    }
+
+    .head-house-pet {
+padding-left: 30px;
     }
 
     .agile {
@@ -1462,7 +1495,7 @@ footer h2 {
     .pets-kajewo {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         width: 270px;
     }
 
@@ -1581,9 +1614,9 @@ footer h2 {
 
     .agile2 {
         /* max-width: 380px; */
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        /* display: flex; */
+        /* align-items: center; */
+        /* flex-direction: column; */
     }
 
     nav {
@@ -1686,6 +1719,7 @@ footer h2 {
         margin-left: 0;
         margin-top: 120px;
     }
+
 
     .abohcnav.burger li {
         font-size: 25px;
@@ -1997,7 +2031,7 @@ footer h2 {
 
     .burger-pet {
         display: block;
-        margin: 33px 0px 43px 65px;
+        margin: 33px 0px 43px 0px;
         z-index: 12;
         transition: all 0.5s ease-in;
     }
@@ -2150,16 +2184,16 @@ footer h2 {
     .our-friends-pets h1 {
         font-size: 25px;
         padding-top: 0px;
-        margin: 0;
-        margin-left: 0px;
+        /* margin: 0;
+        margin-left: 0px; */
     }
 
     .cozy-house-bet a {
-        margin-left: 24px;
+        /* margin-left: 24px; */
     }
 
     .cozy-house-bet span {
-        margin-left: 28px;
+        /* margin-left: 28px; */
     }
 
     .kajewo-pet {
@@ -2175,7 +2209,7 @@ footer h2 {
         column-gap: 10px;
         margin-top: 0px;
         padding-bottom: 2px;
-        margin-left: 17px;
+        /* margin-left: 17px; */
     }
 
     .not_friend {
@@ -2223,4 +2257,7 @@ footer h2 {
         width: 301px;
     }
 
+    .head-house-pet {
+        padding: 0 60px;
+    }
 }
