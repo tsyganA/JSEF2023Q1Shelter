@@ -1438,7 +1438,7 @@ footer h2 {
     .noly {
         flex-direction: column;
         align-items: center;
-        padding: 62px 10px 0;
+        padding: 59px 10px 0;
     }
 
     .not-only h1 {
@@ -1542,7 +1542,7 @@ footer h2 {
 
     .coho {
         flex-direction: column-reverse;
-        padding: 6px 0 0;
+        padding: 9px 0 0;
     }
 
     .about h2 {
@@ -1550,7 +1550,7 @@ footer h2 {
         max-width: 250px;
         text-align: center;
         margin-top: 35px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
 
     .about p:nth-child(2) {
@@ -1573,7 +1573,7 @@ footer h2 {
 
     .our-friends h2 {
         font-size: 25px;
-        padding-top: 43px;
+        padding-top: 40px;
         padding-bottom: 15px;
     }
 
@@ -1620,7 +1620,7 @@ footer h2 {
 
     .help h2 {
         font-size: 25px;
-        margin-top: 42px;
+        margin-top: 44px;
         margin-bottom: 30px;
     }
 
