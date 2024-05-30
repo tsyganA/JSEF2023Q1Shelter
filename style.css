@@ -16,7 +16,7 @@ header {
 
 .head-house {
     margin: auto;
-    padding: 30px 40px 0 40px;
+    padding: 30px 20px 0 20px;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -862,6 +862,7 @@ nav ul li a:hover {
     color: #b2b2b2;
     max-width: 380px;
     margin: 19px 0 20px 0;
+    /* text-align: justify; */
 }
 
 .youcan {
@@ -891,6 +892,15 @@ footer h2 {
 }
 
 .forwe {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+}
+
+.forwe-pet {
     display: flex;
     margin: auto;
     max-width: 1200px;
@@ -1050,7 +1060,7 @@ footer h2 {
     display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+@media screen and (min-width: 758px) and (max-width: 1279.98px) {
     .our-friends-pets h1 {
         padding-top: 54px;
     }
@@ -1228,7 +1238,13 @@ footer h2 {
     }
 
     .forwe {
-        padding: 15px 47px 0;
+        padding: 13px 25px 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .forwe-pet {
+        padding: 13px 44px 0;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -1289,7 +1305,7 @@ footer h2 {
     }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 757.98px) {
     .our-friends-pets h1 {
         padding-top: 20px;
     }
@@ -1441,41 +1457,36 @@ footer h2 {
         padding: 59px 10px 0;
     }
 
-    .not-only h1 {
-        font-size: 25px;
-        max-width: 200px;
-        letter-spacing: 0.06em;
-        margin-top: 0;
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
     .not-only img {
-        width: 78%;
+        width: 89%;
     }
 
     .not-only p {
-        max-width: 300px;
-        text-align: center;
+        /* max-width: 100%; */
+        /* max-width: 300px; */
+        /* text-align: center; */
     }
 
     /* burger start */
 
     .burgert {
-        display: block;
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        /* margin: 0; */
         z-index: 12;
         transition: all 0.5s ease-in;
+        height: 22px;
+        justify-content: space-between;
     }
 
     .lineburg {
         display: block;
         height: 2px;
         width: 30px;
-        margin: 6px auto;
+        /* margin: 6px auto; */
         background-color: #f1cdb3;
         transition: 0.5s;
-        margin-top: 9px;
+        /* margin-top: 8px; */
     }
 
     .popup {
@@ -1540,40 +1551,27 @@ footer h2 {
         width: 195px;
     }
 
-    .coho {
-        flex-direction: column-reverse;
-        padding: 9px 0 0;
-    }
-
-    .about h2 {
-        font-size: 25px;
-        max-width: 250px;
-        text-align: center;
-        margin-top: 35px;
-        margin-bottom: 10px;
-    }
-
     .about p:nth-child(2) {
-        max-width: 270px;
+        /* max-width: 270px; */
         text-align: justify;
     }
 
     .about p:nth-child(3) {
-        max-width: 270px;
+        /* max-width: 270px; */
         margin-top: 7px;
         text-align: justify;
         margin-bottom: 0;
     }
 
     .about img {
-        margin-top: 42px;
+        margin-top: 35px;
         margin-bottom: 44px;
-        width: 72%;
+        width: 98%;
     }
 
     .our-friends h2 {
         font-size: 25px;
-        padding-top: 40px;
+        padding-top: 42px;
         padding-bottom: 15px;
     }
 
@@ -1687,49 +1685,26 @@ footer h2 {
     }
 
     .youcan {
-        display: block;
-        padding: 0;
-    }
-
-    .younamelegal h2 {
-        font-size: 25px;
-        text-align: center;
-        max-width: 220px;
-        margin-top: 44px;
-        margin-bottom: 5px;
-    }
-
-    .younamelegal p:nth-child(2) {
-        line-height: 160%;
-        letter-spacing: 0;
-    }
-
-    .younamelegal button {
-        width: 281px;
-        height: 43px;
-        margin-top: 6px;
-    }
-
-    .younamelegal button span {
-        font-size: 15px;
-        line-height: 110%;
-        margin-top: 13px;
+        /* display: block; */
+        flex-direction: column-reverse;
+        /* padding: 0; */
     }
 
     .younamelegal p:nth-child(4) {
-        max-width: 280px;
+        /* max-width: 280px; */
     }
 
     .donation-dog {
         margin: 24px 0 41px 0;
-        max-width: 71%;
+        max-width: 85%;
     }
 
     .younamelegal {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; */
         margin-left: 0;
+        max-width: 380px;
     }
 
     .forweimg {
@@ -1742,10 +1717,16 @@ footer h2 {
         padding: 0;
     }
 
+    .forwe-pet {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
     footer h2 {
         font-size: 25px;
         text-align: center;
-        margin-top: 13px;
+        margin-top: 15px;
     }
 
     .email {
@@ -1764,7 +1745,7 @@ footer h2 {
     }
 
     .footer-puppy {
-        max-width: 73%;
+        max-width: 82%;
         margin-top: 40px;
     }
 
@@ -1942,10 +1923,10 @@ footer h2 {
     }
 
     .not_friend {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 0 99px 0;
+        /* display: flex;
+        flex-direction: column; */
+        /* align-items: center; */
+        /* padding: 0 0 99px 0; */
     }
 
     .img_puppy {
@@ -1955,8 +1936,9 @@ footer h2 {
 
     .about_current {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         flex-direction: column;
+        /* max-width: 437px; */
     }
 
     .about-pets_img {
@@ -1977,5 +1959,121 @@ footer h2 {
 
     .weare a {
         width: 301px;
+    }
+
+    .coho {
+        flex-direction: column-reverse;
+        max-width: 437px;
+        padding: 69px 26px 0px;
+    }
+
+    .not-only h1 {
+        margin: 0px 0 40px 0;
+    }
+
+    .makeafriend_button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 97px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .youcan {
+        /* display: block; */
+        /* flex-direction: column-reverse; */
+        padding: 0 10px;
+    }
+    .younamelegal {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .younamelegal h2 {
+        font-size: 25px;
+        text-align: center;
+        max-width: 220px;
+        margin-top: 45px;
+        margin-bottom: 5px;
+    }
+
+    .younamelegal p:nth-child(2) {
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .younamelegal button {
+        width: 281px;
+        height: 43px;
+        margin-top: 6px;
+    }
+
+    .younamelegal button span {
+        font-size: 15px;
+        line-height: 110%;
+        margin-top: 13px;
+    }
+
+    .younamelegal p:nth-child(4) {
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .about h2 {
+        font-size: 25px;
+        max-width: 250px;
+        text-align: center;
+        margin-top: 33px;
+        margin-bottom: 10px;
+    }
+
+    .coho {
+        flex-direction: column-reverse;
+        padding: 9px 26px 0;
+        max-width: 437px;
+    }
+
+    .about_current {
+        /* display: flex; */
+        align-items: center;
+        /* flex-direction: column; */
+        /* max-width: 437px; */
+    }
+
+    .not-only h1 {
+        font-size: 25px;
+        max-width: 200px;
+        letter-spacing: 0.06em;
+        margin-top: 0;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+
+    .not_friend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 99px 0;
+    }
+    .makeafriend_button {
+        display: flex;
+        /* justify-content: center; */
+        margin-bottom: 0;
+    }
+
+    .not-only p {
+        /* max-width: 100%; */
+        /* max-width: 300px; */
+        text-align: center;
+    }
+
+    .noly {
+        display: block;
+        /* flex-direction: column;
+        align-items: center;
+        padding: 59px 10px 0; */
     }
 }
