@@ -16,7 +16,7 @@ header {
 
 .head-house {
     margin: auto;
-    padding: 30px 40px 0 40px;
+    padding: 30px 20px 0 20px;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -285,6 +285,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     width: 443px;
+    margin-bottom: 20px;
 }
 
 .transition-right {
@@ -385,6 +386,7 @@ nav ul li a:hover {
 }
 
 /* MODAL-WINDOW STYLE start*/
+
 .overlay-modal {
     position: fixed;
     width: 100vw;
@@ -510,6 +512,7 @@ nav ul li a:hover {
 .modal__list__item strong {
     font-weight: 700;
 }
+
 /* MODAL-WINDOW STYLE end */
 
 .kajewo {
@@ -899,6 +902,15 @@ footer h2 {
     padding: 40px 0 0 0;
 }
 
+.forwe-pet {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+}
+
 .email {
     display: flex;
     align-items: center;
@@ -1050,7 +1062,7 @@ footer h2 {
     display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+@media screen and (min-width: 758px) and (max-width: 1279.98px) {
     .our-friends-pets h1 {
         padding-top: 54px;
     }
@@ -1228,7 +1240,13 @@ footer h2 {
     }
 
     .forwe {
-        padding: 15px 47px 0;
+        padding: 13px 25px 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .forwe-pet {
+        padding: 13px 44px 0;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -1289,7 +1307,7 @@ footer h2 {
     }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 757.98px) {
     .our-friends-pets h1 {
         padding-top: 20px;
     }
@@ -1441,41 +1459,27 @@ footer h2 {
         padding: 59px 10px 0;
     }
 
-    .not-only h1 {
-        font-size: 25px;
-        max-width: 200px;
-        letter-spacing: 0.06em;
-        margin-top: 0;
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
     .not-only img {
-        width: 78%;
-    }
-
-    .not-only p {
-        max-width: 300px;
-        text-align: center;
+        width: 89%;
     }
 
     /* burger start */
 
     .burgert {
-        display: block;
-        margin: 0;
+        display: flex;
+        flex-direction: column;
         z-index: 12;
         transition: all 0.5s ease-in;
+        height: 22px;
+        justify-content: space-between;
     }
 
     .lineburg {
         display: block;
         height: 2px;
         width: 30px;
-        margin: 6px auto;
         background-color: #f1cdb3;
         transition: 0.5s;
-        margin-top: 9px;
     }
 
     .popup {
@@ -1534,41 +1538,27 @@ footer h2 {
         color: #fafafa;
         font-size: 26px;
     }
+
     /* burger end*/
 
     .cozy-house p {
         width: 195px;
     }
 
-    .coho {
-        flex-direction: column-reverse;
-        padding: 9px 0 0;
-    }
-
-    .about h2 {
-        font-size: 25px;
-        max-width: 250px;
-        text-align: center;
-        margin-top: 35px;
-        margin-bottom: 10px;
-    }
-
     .about p:nth-child(2) {
-        max-width: 270px;
         text-align: justify;
     }
 
     .about p:nth-child(3) {
-        max-width: 270px;
         margin-top: 7px;
         text-align: justify;
         margin-bottom: 0;
     }
 
     .about img {
-        margin-top: 42px;
+        margin-top: 35px;
         margin-bottom: 44px;
-        width: 72%;
+        width: 98%;
     }
 
     .our-friends h2 {
@@ -1687,49 +1677,17 @@ footer h2 {
     }
 
     .youcan {
-        display: block;
-        padding: 0;
-    }
-
-    .younamelegal h2 {
-        font-size: 25px;
-        text-align: center;
-        max-width: 220px;
-        margin-top: 44px;
-        margin-bottom: 5px;
-    }
-
-    .younamelegal p:nth-child(2) {
-        line-height: 160%;
-        letter-spacing: 0;
-    }
-
-    .younamelegal button {
-        width: 281px;
-        height: 43px;
-        margin-top: 6px;
-    }
-
-    .younamelegal button span {
-        font-size: 15px;
-        line-height: 110%;
-        margin-top: 13px;
-    }
-
-    .younamelegal p:nth-child(4) {
-        max-width: 280px;
+        flex-direction: column-reverse;
     }
 
     .donation-dog {
         margin: 24px 0 41px 0;
-        max-width: 71%;
+        max-width: 85%;
     }
 
     .younamelegal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-left: 0;
+        max-width: 380px;
     }
 
     .forweimg {
@@ -1742,10 +1700,16 @@ footer h2 {
         padding: 0;
     }
 
+    .forwe-pet {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
     footer h2 {
         font-size: 25px;
         text-align: center;
-        margin-top: 13px;
+        margin-top: 15px;
     }
 
     .email {
@@ -1764,7 +1728,7 @@ footer h2 {
     }
 
     .footer-puppy {
-        max-width: 73%;
+        max-width: 82%;
         margin-top: 40px;
     }
 
@@ -1941,13 +1905,6 @@ footer h2 {
         padding-bottom: 2px;
     }
 
-    .not_friend {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 0 99px 0;
-    }
-
     .img_puppy {
         display: flex;
         justify-content: center;
@@ -1955,7 +1912,6 @@ footer h2 {
 
     .about_current {
         display: flex;
-        align-items: center;
         flex-direction: column;
     }
 
@@ -1977,5 +1933,111 @@ footer h2 {
 
     .weare a {
         width: 301px;
+    }
+
+    .coho {
+        flex-direction: column-reverse;
+        max-width: 437px;
+        padding: 69px 26px 0px;
+    }
+
+    .not-only h1 {
+        margin: 0px 0 40px 0;
+    }
+
+    .makeafriend_button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 97px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .youcan {
+        padding: 0 10px;
+    }
+    .younamelegal {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .younamelegal h2 {
+        font-size: 25px;
+        text-align: center;
+        max-width: 220px;
+        margin-top: 43px;
+        margin-bottom: 5px;
+    }
+
+    .younamelegal p:nth-child(2) {
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .younamelegal button {
+        width: 281px;
+        height: 43px;
+        margin-top: 6px;
+    }
+
+    .younamelegal button span {
+        font-size: 15px;
+        line-height: 110%;
+        margin-top: 13px;
+    }
+
+    .younamelegal p:nth-child(4) {
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .about h2 {
+        font-size: 25px;
+        max-width: 250px;
+        text-align: center;
+        margin-top: 33px;
+        margin-bottom: 10px;
+    }
+
+    .coho {
+        flex-direction: column-reverse;
+        padding: 9px 24px 0;
+        max-width: 437px;
+    }
+
+    .about_current {
+        align-items: center;
+    }
+
+    .not-only h1 {
+        font-size: 25px;
+        max-width: 200px;
+        letter-spacing: 0.06em;
+        margin-top: 0;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+
+    .not_friend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 99px 0;
+    }
+    .makeafriend_button {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .not-only p {
+        text-align: center;
+    }
+
+    .noly {
+        display: block;
+        padding: 60px 10px 0;
     }
 }
