@@ -285,6 +285,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     width: 443px;
+    margin-bottom: 20px;
 }
 
 .transition-right {
@@ -385,6 +386,7 @@ nav ul li a:hover {
 }
 
 /* MODAL-WINDOW STYLE start*/
+
 .overlay-modal {
     position: fixed;
     width: 100vw;
@@ -510,6 +512,7 @@ nav ul li a:hover {
 .modal__list__item strong {
     font-weight: 700;
 }
+
 /* MODAL-WINDOW STYLE end */
 
 .kajewo {
@@ -862,7 +865,6 @@ nav ul li a:hover {
     color: #b2b2b2;
     max-width: 380px;
     margin: 19px 0 20px 0;
-    /* text-align: justify; */
 }
 
 .youcan {
@@ -1461,18 +1463,11 @@ footer h2 {
         width: 89%;
     }
 
-    .not-only p {
-        /* max-width: 100%; */
-        /* max-width: 300px; */
-        /* text-align: center; */
-    }
-
     /* burger start */
 
     .burgert {
         display: flex;
         flex-direction: column;
-        /* margin: 0; */
         z-index: 12;
         transition: all 0.5s ease-in;
         height: 22px;
@@ -1483,10 +1478,8 @@ footer h2 {
         display: block;
         height: 2px;
         width: 30px;
-        /* margin: 6px auto; */
         background-color: #f1cdb3;
         transition: 0.5s;
-        /* margin-top: 8px; */
     }
 
     .popup {
@@ -1545,6 +1538,7 @@ footer h2 {
         color: #fafafa;
         font-size: 26px;
     }
+
     /* burger end*/
 
     .cozy-house p {
@@ -1552,12 +1546,10 @@ footer h2 {
     }
 
     .about p:nth-child(2) {
-        /* max-width: 270px; */
         text-align: justify;
     }
 
     .about p:nth-child(3) {
-        /* max-width: 270px; */
         margin-top: 7px;
         text-align: justify;
         margin-bottom: 0;
@@ -1571,7 +1563,7 @@ footer h2 {
 
     .our-friends h2 {
         font-size: 25px;
-        padding-top: 42px;
+        padding-top: 40px;
         padding-bottom: 15px;
     }
 
@@ -1685,13 +1677,7 @@ footer h2 {
     }
 
     .youcan {
-        /* display: block; */
         flex-direction: column-reverse;
-        /* padding: 0; */
-    }
-
-    .younamelegal p:nth-child(4) {
-        /* max-width: 280px; */
     }
 
     .donation-dog {
@@ -1700,9 +1686,6 @@ footer h2 {
     }
 
     .younamelegal {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
         margin-left: 0;
         max-width: 380px;
     }
@@ -1922,13 +1905,6 @@ footer h2 {
         padding-bottom: 2px;
     }
 
-    .not_friend {
-        /* display: flex;
-        flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0 0 99px 0; */
-    }
-
     .img_puppy {
         display: flex;
         justify-content: center;
@@ -1936,9 +1912,7 @@ footer h2 {
 
     .about_current {
         display: flex;
-        /* align-items: center; */
         flex-direction: column;
-        /* max-width: 437px; */
     }
 
     .about-pets_img {
@@ -1980,8 +1954,6 @@ footer h2 {
 
 @media screen and (max-width: 414px) {
     .youcan {
-        /* display: block; */
-        /* flex-direction: column-reverse; */
         padding: 0 10px;
     }
     .younamelegal {
@@ -1996,7 +1968,7 @@ footer h2 {
         font-size: 25px;
         text-align: center;
         max-width: 220px;
-        margin-top: 45px;
+        margin-top: 43px;
         margin-bottom: 5px;
     }
 
@@ -2032,15 +2004,12 @@ footer h2 {
 
     .coho {
         flex-direction: column-reverse;
-        padding: 9px 26px 0;
+        padding: 9px 24px 0;
         max-width: 437px;
     }
 
     .about_current {
-        /* display: flex; */
         align-items: center;
-        /* flex-direction: column; */
-        /* max-width: 437px; */
     }
 
     .not-only h1 {
@@ -2060,20 +2029,15 @@ footer h2 {
     }
     .makeafriend_button {
         display: flex;
-        /* justify-content: center; */
         margin-bottom: 0;
     }
 
     .not-only p {
-        /* max-width: 100%; */
-        /* max-width: 300px; */
         text-align: center;
     }
 
     .noly {
         display: block;
-        /* flex-direction: column;
-        align-items: center;
-        padding: 59px 10px 0; */
+        padding: 60px 10px 0;
     }
 }
