@@ -1062,6 +1062,71 @@ footer h2 {
     display: none;
 }
 
+/* mobile */
+
+.head-house,
+.cozy-house {
+    width: 100%;
+}
+
+.header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.not_friend h1 {
+    font-size: 36px;
+}
+
+.not_friend p {
+    font-size: 18px;
+}
+
+.not_friend button {
+    padding: 10px 20px;
+}
+
+.coho p,
+.about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.coho h2,
+.agile2 h2 {
+    font-size: 24px;
+}
+
+.agile,
+.agile2 {
+    padding: 20px;
+}
+
+.pet-str div {
+    /* flex: 1 1 45%; */
+    /* margin: 10px; */
+}
+
+.header {
+    padding: 10px 20px;
+}
+
+.cozy-house p,
+.cozy-house span {
+    font-size: 18px;
+}
+
 @media screen and (min-width: 758px) and (max-width: 1279.98px) {
     .our-friends-pets h1 {
         padding-top: 54px;
@@ -1304,6 +1369,76 @@ footer h2 {
 
     .kajewo button {
         margin-top: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .head-house,
+    .cozy-house {
+        padding: 15px;
+    }
+
+    .head ul {
+        padding: 0;
+    }
+
+    .header nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .our-friends__card {
+        width: 100%;
+        height: auto;
+    }
+
+    .agile,
+    .agile2 {
+        padding: 15px;
+    }
+
+    .not_friend h1 {
+        font-size: 24px;
+    }
+
+    .not_friend p,
+    .cozy-house p,
+    .about p {
+        font-size: 14px;
+    }
+
+    .not_friend button {
+        width: 100%;
+    }
+
+    .coho,
+    .noly,
+    .pet-str {
+        padding: 10px;
+    }
+
+    .header nav ul li a {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .head-house p {
+        font-size: 20px;
+    }
+
+    .head-house span {
+        font-size: 16px;
+    }
+
+    .about_current h2 {
+        font-size: 20px;
+    }
+
+    .about_current p {
+        font-size: 14px;
+    }
+
+    .agile2 h2 {
+        font-size: 20px;
     }
 }
 
