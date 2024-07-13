@@ -1064,7 +1064,7 @@ footer h2 {
 
 /* mobile */
 
-.head-house,
+/* .head-house,
 .cozy-house {
     width: 100%;
 }
@@ -1114,8 +1114,8 @@ footer h2 {
 }
 
 .pet-str div {
-    /* flex: 1 1 45%; */
-    /* margin: 10px; */
+    flex: 1 1 45%;
+    margin: 10px;
 }
 
 .header {
@@ -1125,7 +1125,7 @@ footer h2 {
 .cozy-house p,
 .cozy-house span {
     font-size: 18px;
-}
+} */
 
 @media screen and (min-width: 758px) and (max-width: 1279.98px) {
     .our-friends-pets h1 {
@@ -1371,6 +1371,7 @@ footer h2 {
         margin-top: 0;
     }
 }
+/* 
 @media only screen and (max-width: 768px) {
     .head-house,
     .cozy-house {
@@ -1440,7 +1441,7 @@ footer h2 {
     .agile2 h2 {
         font-size: 20px;
     }
-}
+} */
 
 @media screen and (max-width: 757.98px) {
     .our-friends-pets h1 {
@@ -2087,7 +2088,7 @@ footer h2 {
     }
 }
 
-@media screen and (max-width: 414px) {
+/* @media screen and (max-width: 414px) {
     .youcan {
         padding: 0 10px;
     }
@@ -2175,4 +2176,4 @@ footer h2 {
         display: block;
         padding: 60px 10px 0;
     }
-}
+} */
