@@ -36,7 +36,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 185.7px;
+    /* max-width: 185.7px; */
+    max-width: 12em;
 }
 
 .agile {
@@ -172,7 +173,7 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    /* max-width: 310px; */
+    max-width: 310px;
     margin-top: 166px;
     margin-bottom: 40px;
     color: #ffffff;
@@ -2088,7 +2089,7 @@ footer h2 {
     }
 }
 
-/* @media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     .youcan {
         padding: 0 10px;
     }
@@ -2176,4 +2177,4 @@ footer h2 {
         display: block;
         padding: 60px 10px 0;
     }
-} */
+}
