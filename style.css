@@ -172,7 +172,7 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    max-width: 310px;
+    /* max-width: 310px; */
     margin-top: 166px;
     margin-bottom: 40px;
     color: #ffffff;
