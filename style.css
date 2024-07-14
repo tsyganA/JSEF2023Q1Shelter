@@ -1803,7 +1803,7 @@ footer h2 {
     }
 
     .pet-str {
-        width: 271px;
+        max-width: 271px;
         column-gap: 50px;
         justify-content: left;
         margin-bottom: 25px;
@@ -2177,5 +2177,9 @@ footer h2 {
     .noly {
         display: block;
         padding: 60px 10px 0;
+    }
+
+    .weare span {
+        width: 270px;
     }
 }
