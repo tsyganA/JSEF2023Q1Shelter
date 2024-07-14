@@ -2057,6 +2057,10 @@ footer h2 {
     .pet-str {
         padding-left: 10px;
     }
+
+    .younamelegal p:nth-child(4) {
+        max-width: 280px;
+    }
 }
 
 @media screen and (max-width: 320px) {
