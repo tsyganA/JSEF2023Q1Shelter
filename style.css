@@ -36,7 +36,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    /* max-width: 185.7px; */
     max-width: 13em;
 }
 
@@ -287,7 +286,6 @@ nav ul li a:hover {
     justify-content: space-between;
     width: 443px;
     margin-bottom: 20px;
-    /* padding-left: 80px; */
 }
 
 .transition-right {
@@ -1064,76 +1062,9 @@ footer h2 {
     display: none;
 }
 
-/* mobile */
-
-/* .head-house,
-.cozy-house {
-    width: 100%;
-}
-
-.header nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.not_friend h1 {
-    font-size: 36px;
-}
-
-.not_friend p {
-    font-size: 18px;
-}
-
-.not_friend button {
-    padding: 10px 20px;
-}
-
-.coho p,
-.about p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.coho h2,
-.agile2 h2 {
-    font-size: 24px;
-}
-
-.agile,
-.agile2 {
-    padding: 20px;
-}
-
-.pet-str div {
-    flex: 1 1 45%;
-    margin: 10px;
-}
-
-.header {
-    padding: 10px 20px;
-}
-
-.cozy-house p,
-.cozy-house span {
-    font-size: 18px;
-} */
-
 @media screen and (max-width: 790px) {
     .noly {
         flex-direction: column;
-        /* align-items: center;
-        padding: 60px 30px 0; */
     }
 }
 
@@ -1230,7 +1161,6 @@ footer h2 {
     }
 
     .our-friends-pets__title {
-        /* margin-left: calc(50% - 200px); */
         padding-bottom: 29px;
     }
 
@@ -1257,7 +1187,6 @@ footer h2 {
     }
 
     .noly {
-        /* flex-direction: column; */
         align-items: center;
         padding: 60px 30px 0;
     }
@@ -1382,84 +1311,10 @@ footer h2 {
     }
 
     .weare {
-        /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
         padding: 16px 0 60px 0;
         max-width: 300px;
     }
 }
-/* 
-@media only screen and (max-width: 768px) {
-    .head-house,
-    .cozy-house {
-        padding: 15px;
-    }
-
-    .head ul {
-        padding: 0;
-    }
-
-    .header nav ul {
-        width: 100%;
-        padding: 0;
-    }
-
-    .our-friends__card {
-        width: 100%;
-        height: auto;
-    }
-
-    .agile,
-    .agile2 {
-        padding: 15px;
-    }
-
-    .not_friend h1 {
-        font-size: 24px;
-    }
-
-    .not_friend p,
-    .cozy-house p,
-    .about p {
-        font-size: 14px;
-    }
-
-    .not_friend button {
-        width: 100%;
-    }
-
-    .coho,
-    .noly,
-    .pet-str {
-        padding: 10px;
-    }
-
-    .header nav ul li a {
-        padding: 10px 0;
-        font-size: 16px;
-    }
-
-    .head-house p {
-        font-size: 20px;
-    }
-
-    .head-house span {
-        font-size: 16px;
-    }
-
-    .about_current h2 {
-        font-size: 20px;
-    }
-
-    .about_current p {
-        font-size: 14px;
-    }
-
-    .agile2 h2 {
-        font-size: 20px;
-    }
-} */
 
 @media screen and (max-width: 757.98px) {
     .our-friends-pets h1 {
@@ -1695,13 +1550,6 @@ footer h2 {
 
     /* burger end*/
 
-    .cozy-house p {
-        /* width: 200px; */
-        /* width: 13em; */
-    }
-    .cozy-house {
-        /* max-width: 13em; */
-    }
     .about p:nth-child(2) {
         text-align: justify;
     }
@@ -2148,7 +1996,6 @@ footer h2 {
     }
 
     .younamelegal p:nth-child(4) {
-        /* padding: 0 10px; */
         text-align: justify;
     }
 
@@ -2199,23 +2046,8 @@ footer h2 {
         padding: 60px 10px 0;
     }
 
-    /* .weare span {
-        width: 280px;
-    } */
-
     .head-house {
-        /* margin: auto; */
         padding: 30px 20px 0 20px;
-        /* max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; */
-    }
-
-    .weare {
-        /* height: 234px; */
-        /* padding-left: 18px; */
-        /* align-items: center; */
     }
 
     .weare a {
@@ -2229,13 +2061,10 @@ footer h2 {
 
 @media screen and (max-width: 320px) {
     .coho {
-        /* flex-direction: column-reverse; */
         padding: 9px 10px 0;
-        /* max-width: 437px; */
     }
 
     .head-house {
-        /* margin: auto; */
         padding: 30px 10px 0 10px;
     }
 }
