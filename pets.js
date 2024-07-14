@@ -88,7 +88,7 @@ async function ourFriends() {
     let petsPerPage = 8;
 
     function windowSizeCheck() {
-        if (window.matchMedia('(max-width: 767.98px)').matches) {
+        if (window.matchMedia('(max-width: 757.98px)').matches) {
             petsPerPage = 3;
         } else if (window.matchMedia('(max-width: 1279.98px)').matches) {
             petsPerPage = 6;
