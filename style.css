@@ -961,7 +961,7 @@ footer h2 {
     letter-spacing: 0.06em;
     color: #f1cdb3;
     margin-left: 19px;
-    max-width: 270px;
+    max-width: 280px;
 }
 
 .weare a {
@@ -1847,6 +1847,7 @@ footer h2 {
         font-size: 25px;
         text-align: center;
         margin-top: 15px;
+        max-width: 294px;
     }
 
     .email {
