@@ -1803,7 +1803,7 @@ footer h2 {
     }
 
     .pet-str {
-        width: 251px;
+        width: 271px;
         column-gap: 50px;
         justify-content: left;
         margin-bottom: 25px;
@@ -2104,7 +2104,7 @@ footer h2 {
     .younamelegal h2 {
         font-size: 25px;
         text-align: center;
-        max-width: 220px;
+        max-width: 229px;
         margin-top: 43px;
         margin-bottom: 5px;
     }
@@ -2151,7 +2151,7 @@ footer h2 {
 
     .not-only h1 {
         font-size: 25px;
-        max-width: 200px;
+        max-width: 250px;
         letter-spacing: 0.06em;
         margin-top: 0;
         margin-bottom: 27px;
