@@ -28,14 +28,14 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    padding: 30px 40px;
+    padding: 30px 20px;
     max-width: 1200px;
 }
 
 .cozy-house {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     /* max-width: 185.7px; */
     max-width: 13em;
 }
@@ -287,6 +287,7 @@ nav ul li a:hover {
     justify-content: space-between;
     width: 443px;
     margin-bottom: 20px;
+    /* padding-left: 80px; */
 }
 
 .transition-right {
@@ -804,7 +805,7 @@ nav ul li a:hover {
 }
 
 .younamelegal {
-    margin-left: 29px;
+    margin-left: 27px;
     order: 2;
 }
 
@@ -864,7 +865,7 @@ nav ul li a:hover {
     font-size: 12px;
     line-height: 18px;
     color: #b2b2b2;
-    max-width: 360px;
+    max-width: 380px;
     margin: 19px 0 20px 0;
 }
 
@@ -1221,7 +1222,7 @@ footer h2 {
     }
 
     .our-friends-pets__title {
-        margin-left: calc(50% - 200px);
+        /* margin-left: calc(50% - 200px); */
         padding-bottom: 29px;
     }
 
@@ -1306,7 +1307,7 @@ footer h2 {
     }
 
     .forwe {
-        padding: 13px 25px 0;
+        padding: 11px 40px 0 35px;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -1370,6 +1371,14 @@ footer h2 {
 
     .kajewo button {
         margin-top: 0;
+    }
+
+    .weare {
+        /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+        padding: 16px 0 60px 0;
+        max-width: 300px;
     }
 }
 /* 
@@ -1679,9 +1688,12 @@ footer h2 {
     /* burger end*/
 
     .cozy-house p {
-        /* width: 195px; */
+        /* width: 200px; */
+        /* width: 13em; */
     }
-
+    .cozy-house {
+        /* max-width: 13em; */
+    }
     .about p:nth-child(2) {
         text-align: justify;
     }
@@ -2128,7 +2140,7 @@ footer h2 {
     }
 
     .younamelegal p:nth-child(4) {
-        padding: 0 10px;
+        /* padding: 0 10px; */
         text-align: justify;
     }
 
@@ -2182,4 +2194,40 @@ footer h2 {
     /* .weare span {
         width: 280px;
     } */
+
+    .head-house {
+        /* margin: auto; */
+        padding: 30px 20px 0 20px;
+        /* max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    }
+
+    .weare {
+        /* height: 234px; */
+        /* padding-left: 18px; */
+        /* align-items: center; */
+    }
+
+    .weare a {
+        padding-left: 18px;
+    }
+
+    .pet-str {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .coho {
+        /* flex-direction: column-reverse; */
+        padding: 9px 10px 0;
+        /* max-width: 437px; */
+    }
+
+    .head-house {
+        /* margin: auto; */
+        padding: 30px 10px 0 10px;
+    }
 }
