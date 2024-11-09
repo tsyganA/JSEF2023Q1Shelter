@@ -63,9 +63,6 @@ const ITEM_ACTIVE = document.querySelector('#item-active');
 let itemActiveIndex = [];
 let itemLeftIndex = [];
 let itemRightIndex = [];
-const overlayModal = document.querySelector('.overlay-modal');
-const modal = document.querySelector('.modal');
-const modalClose = document.querySelector('.modal__close');
 
 async function getPetsList() {
     const response = await fetch('./pets.json');
@@ -178,6 +175,10 @@ CAROUSEL.addEventListener('animationend', animationEvent => {
 });
 
 // MODAL WINDOW implementation
+
+const overlayModal = document.querySelector('.overlay-modal');
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close');
 
 function createModalContent(img, name, type, breed, description, age, inoculations, diseases, parasites) {
     const modalContent = document.createElement('div');

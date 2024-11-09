@@ -76,7 +76,7 @@ function shuffle(array) {
 async function getArrPets() {
     const petsListData = await getPetsList();
     let petsArr = [];
-    for (i = 0; i < 6; i++) {
+    for (let i = 0; i < 6; i++) {
         petsArr = [...petsArr, ...shuffle(petsListData)];
     }
     return petsArr;
@@ -102,88 +102,70 @@ async function ourFriends() {
         page--;
         const start = elementsPerPage * page;
         const end = start + elementsPerPage;
-        const paginatedPetsListData = arrPetsListData.slice(start, end);
+        const paginatedPetsListData = arrData.slice(start, end);
         paginatedPetsListData.forEach(element => {
             const petElement = document.createElement('div');
             petElement.classList.add('our-friends__card');
             petElement.dataset.name = element.name;
             petElement.innerHTML = `
-  <img
-    src=${element.img}
-    alt=${element.name}
-    class="our-friends__card__img"
-  />
-  <h3 class="our-friends__card__title">${element.name}</h3>
-  <button class="our-friends__card__btn">Learn more</button>`;
+                <img src="${element.img}" alt="${element.name}" class="our-friends__card__img"/>
+                <h3 class="our-friends__card__title">${element.name}</h3>
+                <button class="our-friends__card__btn">Learn more</button>`;
             petsList.appendChild(petElement);
         });
     }
 
-    function displayPagination(arrData, elementsPerPage) {
+    function updatePaginationStatus(pageCount) {
         const paginationElement = document.querySelector('.btn__arrow-active');
-        paginationElement.textContent = currentPage;
-        const pageCount = Math.ceil(arrData.length / elementsPerPage);
+        if (paginationElement) paginationElement.textContent = currentPage;
 
-        function btnPaginationClassToggle(btn, boolean) {
-            boolean ? btn.classList.add('btn__arrow-inactive') : btn.classList.remove('btn__arrow-inactive');
-            btn.disabled = boolean;
-        }
-
-        function pageNumberCheck() {
-            if (currentPage === 1) {
-                btnPaginationClassToggle(firstPageBtn, true);
-                btnPaginationClassToggle(previousPageBtn, true);
-            } else {
-                btnPaginationClassToggle(firstPageBtn, false);
-                btnPaginationClassToggle(previousPageBtn, false);
-            }
-            if (currentPage === pageCount) {
-                btnPaginationClassToggle(lastPageBtn, true);
-                btnPaginationClassToggle(nextPageBtn, true);
-            } else {
-                btnPaginationClassToggle(lastPageBtn, false);
-                btnPaginationClassToggle(nextPageBtn, false);
-            }
-        }
-
-        function clickBtnAction() {
-            paginationElement.textContent = currentPage;
-            displayList(arrPetsListData, petsPerPage, currentPage);
-            pageNumberCheck();
-        }
-
-        firstPageBtn.addEventListener('click', () => {
-            currentPage = 1;
-            clickBtnAction();
-        });
-
-        previousPageBtn.addEventListener('click', () => {
-            currentPage = currentPage - 1;
-            clickBtnAction();
-        });
-
-        nextPageBtn.addEventListener('click', () => {
-            currentPage = currentPage + 1;
-            clickBtnAction();
-        });
-
-        lastPageBtn.addEventListener('click', () => {
-            currentPage = pageCount;
-            clickBtnAction();
-        });
-
-        pageNumberCheck();
+        firstPageBtn.disabled = currentPage === 1;
+        previousPageBtn.disabled = currentPage === 1;
+        nextPageBtn.disabled = currentPage === pageCount;
+        lastPageBtn.disabled = currentPage === pageCount;
     }
+
+    function displayPagination() {
+        const pageCount = Math.ceil(arrPetsListData.length / petsPerPage);
+        currentPage = Math.min(currentPage, pageCount); // Обновляем текущую страницу при изменении размера окна
+        updatePaginationStatus(pageCount);
+    }
+
+    firstPageBtn.addEventListener('click', () => {
+        currentPage = 1;
+        displayList(arrPetsListData, petsPerPage, currentPage);
+        displayPagination();
+    });
+
+    previousPageBtn.addEventListener('click', () => {
+        currentPage = Math.max(1, currentPage - 1);
+        displayList(arrPetsListData, petsPerPage, currentPage);
+        displayPagination();
+    });
+
+    nextPageBtn.addEventListener('click', () => {
+        const pageCount = Math.ceil(arrPetsListData.length / petsPerPage);
+        currentPage = Math.min(pageCount, currentPage + 1);
+        displayList(arrPetsListData, petsPerPage, currentPage);
+        displayPagination();
+    });
+
+    lastPageBtn.addEventListener('click', () => {
+        const pageCount = Math.ceil(arrPetsListData.length / petsPerPage);
+        currentPage = pageCount;
+        displayList(arrPetsListData, petsPerPage, currentPage);
+        displayPagination();
+    });
 
     window.addEventListener('resize', () => {
         windowSizeCheck();
         displayList(arrPetsListData, petsPerPage, currentPage);
-        displayPagination(arrPetsListData, petsPerPage);
+        displayPagination();
     });
 
     windowSizeCheck();
     displayList(arrPetsListData, petsPerPage, currentPage);
-    displayPagination(arrPetsListData, petsPerPage);
+    displayPagination();
 }
 
 ourFriends();
