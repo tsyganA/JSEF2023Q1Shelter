@@ -52,7 +52,7 @@ function closeMenu() {
 }
 
 // CAROUSEL implementation
-
+// Кнопки для навигации и элементы карусели
 const BTN_LEFT = document.querySelector('#btn-left');
 const BTN_RIGHT = document.querySelector('#btn-right');
 const CAROUSEL = document.querySelector('#carousel');
@@ -60,16 +60,22 @@ const ITEM_LEFT = document.querySelector('#item-left');
 const ITEM_RIGHT = document.querySelector('#item-right');
 const ITEM_ACTIVE = document.querySelector('#item-active');
 
+// Индексы активных карточек
 let itemActiveIndex = [];
 let itemLeftIndex = [];
 let itemRightIndex = [];
 
+// Загружаем список питомцев только один раз
+let petsListData = null;
 async function getPetsList() {
-    const response = await fetch('./pets.json');
-    const petsList = await response.json();
-    return petsList;
+    if (!petsListData) {
+        const response = await fetch('./pets.json');
+        petsListData = await response.json();
+    }
+    return petsListData;
 }
 
+// Функция для создания карточки
 function createCardItem(img, name) {
     const card = document.createElement('div');
     card.classList.add('our-friends__card');
@@ -85,49 +91,42 @@ function createCardItem(img, name) {
     return card;
 }
 
+// Получаем данные питомца и добавляем их в элемент
 async function getPet(index, changedItem) {
-    let quotes = `./pets.json`;
-    const res = await fetch(quotes);
-    const pets = await res.json();
+    const pets = await getPetsList();
     const imgPet = pets[index].img;
     const namePet = pets[index].name;
     const petsHTML = createCardItem(imgPet, namePet);
     changedItem.appendChild(petsHTML);
 }
 
-async function createCardBlock(item, itemIndex) {
+// Создаем блок карточек для активного и соседних элементов
+async function createCardBlock(item, itemIndex, excludeIndices = []) {
     const petsListData = await getPetsList();
-    if (item === ITEM_ACTIVE) {
-        for (let i = 0; i < 3; i++) {
-            const indexPet = Math.floor(Math.random() * petsListData.length);
-            if (itemIndex.indexOf(indexPet) < 0) {
-                getPet(indexPet, item);
-                itemIndex.push(indexPet);
-            } else {
-                i--;
-            }
-        }
-    } else {
-        for (let i = 0; i < 3; i++) {
-            const indexPet = Math.floor(Math.random() * petsListData.length);
-            if (itemActiveIndex.indexOf(indexPet) < 0 && itemIndex.indexOf(indexPet) < 0) {
-                getPet(indexPet, item);
-                itemIndex.push(indexPet);
-            } else {
-                i--;
-            }
-        }
+    item.innerHTML = ''; // очищаем элемент перед добавлением карточек
+    itemIndex.length = 0; // очищаем массив индексов
+
+    for (let i = 0; i < 3; i++) {
+        let indexPet;
+        do {
+            indexPet = Math.floor(Math.random() * petsListData.length);
+        } while (itemIndex.includes(indexPet) || excludeIndices.includes(indexPet));
+
+        await getPet(indexPet, item);
+        itemIndex.push(indexPet);
     }
 }
 
-function createStartCards() {
-    createCardBlock(ITEM_ACTIVE, itemActiveIndex);
-    createCardBlock(ITEM_LEFT, itemLeftIndex);
-    createCardBlock(ITEM_RIGHT, itemRightIndex);
+// Инициализируем начальные карточки
+async function createStartCards() {
+    await createCardBlock(ITEM_ACTIVE, itemActiveIndex);
+    await createCardBlock(ITEM_LEFT, itemLeftIndex, itemActiveIndex);
+    await createCardBlock(ITEM_RIGHT, itemRightIndex, itemActiveIndex);
 }
 
 createStartCards();
 
+// Функции для перемещения влево и вправо
 const moveLeft = () => {
     CAROUSEL.classList.add('transition-left');
     BTN_LEFT.removeEventListener('click', moveLeft);
@@ -140,39 +139,41 @@ const moveRight = () => {
     BTN_RIGHT.removeEventListener('click', moveRight);
 };
 
-BTN_LEFT.addEventListener('click', moveLeft);
-BTN_RIGHT.addEventListener('click', moveRight);
-
-CAROUSEL.addEventListener('animationend', animationEvent => {
+// Восстанавливаем событие анимации и обновляем индексы после анимации
+CAROUSEL.addEventListener('animationend', async animationEvent => {
     if (animationEvent.animationName === 'move-left') {
         CAROUSEL.classList.remove('transition-left');
+        ITEM_RIGHT.innerHTML = ITEM_ACTIVE.innerHTML;
+        ITEM_ACTIVE.innerHTML = ITEM_LEFT.innerHTML;
 
-        document.querySelector('#item-right').innerHTML = ITEM_ACTIVE.innerHTML;
-        document.querySelector('#item-active').innerHTML = ITEM_LEFT.innerHTML;
-
+        // Обновляем индексы
         itemRightIndex = [...itemActiveIndex];
         itemActiveIndex = [...itemLeftIndex];
         itemLeftIndex = [];
 
-        ITEM_LEFT.innerHTML = '';
-        createCardBlock(ITEM_LEFT, itemLeftIndex);
-    } else {
+        // Создаем новые уникальные карточки для ITEM_LEFT
+        await createCardBlock(ITEM_LEFT, itemLeftIndex, itemActiveIndex);
+    } else if (animationEvent.animationName === 'move-right') {
         CAROUSEL.classList.remove('transition-right');
-
-        document.querySelector('#item-left').innerHTML = ITEM_ACTIVE.innerHTML;
-        document.querySelector('#item-active').innerHTML = ITEM_RIGHT.innerHTML;
+        ITEM_LEFT.innerHTML = ITEM_ACTIVE.innerHTML;
+        ITEM_ACTIVE.innerHTML = ITEM_RIGHT.innerHTML;
 
         itemLeftIndex = [...itemActiveIndex];
-        itemActiveIndex = [...itemLeftIndex];
+        itemActiveIndex = [...itemRightIndex];
         itemRightIndex = [];
 
-        ITEM_RIGHT.innerHTML = '';
-        createCardBlock(ITEM_RIGHT, itemRightIndex);
+        // Создаем новые уникальные карточки для ITEM_RIGHT
+        await createCardBlock(ITEM_RIGHT, itemRightIndex, itemActiveIndex);
     }
 
+    // Возвращаем обработчики событий
     BTN_LEFT.addEventListener('click', moveLeft);
     BTN_RIGHT.addEventListener('click', moveRight);
 });
+
+// Назначаем обработчики
+BTN_LEFT.addEventListener('click', moveLeft);
+BTN_RIGHT.addEventListener('click', moveRight);
 
 // MODAL WINDOW implementation
 

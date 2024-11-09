@@ -52,19 +52,21 @@ function closeMenu() {
 }
 
 // PAGINATION implementation
-
+// Элементы пагинации
 const petsList = document.querySelector('.our-friends-pets__card-list');
 const firstPageBtn = document.querySelector('#first-page-btn');
 const previousPageBtn = document.querySelector('#previous-page-btn');
 const nextPageBtn = document.querySelector('#next-page-btn');
 const lastPageBtn = document.querySelector('#last-page-btn');
 
+// Получаем список питомцев
 async function getPetsList() {
     const response = await fetch('./pets.json');
     const petsList = await response.json();
     return petsList;
 }
 
+// Перемешивание массива
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -73,6 +75,7 @@ function shuffle(array) {
     return array;
 }
 
+// Создаем массив карточек с питомцами, перемешивая несколько раз
 async function getArrPets() {
     const petsListData = await getPetsList();
     let petsArr = [];
@@ -86,17 +89,23 @@ async function ourFriends() {
     const arrPetsListData = await getArrPets();
     let currentPage = 1;
     let petsPerPage = 8;
+    let maxPages = 6;
 
+    // Проверка размера окна и установка параметров
     function windowSizeCheck() {
-        if (window.matchMedia('(max-width: 757.98px)').matches) {
+        if (window.innerWidth <= 757.98) {
             petsPerPage = 3;
-        } else if (window.matchMedia('(max-width: 1279.98px)').matches) {
+            maxPages = 16;
+        } else if (window.innerWidth <= 1218.98) {
             petsPerPage = 6;
+            maxPages = 8;
         } else {
             petsPerPage = 8;
+            maxPages = 6;
         }
     }
 
+    // Отображение списка питомцев на странице
     function displayList(arrData, elementsPerPage, page) {
         petsList.innerHTML = '';
         page--;
@@ -115,6 +124,7 @@ async function ourFriends() {
         });
     }
 
+    // Обновление статуса кнопок пагинации
     function updatePaginationStatus(pageCount) {
         const paginationElement = document.querySelector('.btn__arrow-active');
         if (paginationElement) paginationElement.textContent = currentPage;
@@ -125,12 +135,14 @@ async function ourFriends() {
         lastPageBtn.disabled = currentPage === pageCount;
     }
 
+    // Обновление пагинации при изменении страницы или размера окна
     function displayPagination() {
-        const pageCount = Math.ceil(arrPetsListData.length / petsPerPage);
-        currentPage = Math.min(currentPage, pageCount); // Обновляем текущую страницу при изменении размера окна
+        const pageCount = Math.min(maxPages, Math.ceil(arrPetsListData.length / petsPerPage));
+        currentPage = Math.min(currentPage, pageCount);
         updatePaginationStatus(pageCount);
     }
 
+    // Обработчики событий для кнопок пагинации
     firstPageBtn.addEventListener('click', () => {
         currentPage = 1;
         displayList(arrPetsListData, petsPerPage, currentPage);
@@ -144,19 +156,20 @@ async function ourFriends() {
     });
 
     nextPageBtn.addEventListener('click', () => {
-        const pageCount = Math.ceil(arrPetsListData.length / petsPerPage);
+        const pageCount = Math.min(maxPages, Math.ceil(arrPetsListData.length / petsPerPage));
         currentPage = Math.min(pageCount, currentPage + 1);
         displayList(arrPetsListData, petsPerPage, currentPage);
         displayPagination();
     });
 
     lastPageBtn.addEventListener('click', () => {
-        const pageCount = Math.ceil(arrPetsListData.length / petsPerPage);
+        const pageCount = Math.min(maxPages, Math.ceil(arrPetsListData.length / petsPerPage));
         currentPage = pageCount;
         displayList(arrPetsListData, petsPerPage, currentPage);
         displayPagination();
     });
 
+    // Изменение размеров окна для обновления страницы
     window.addEventListener('resize', () => {
         windowSizeCheck();
         displayList(arrPetsListData, petsPerPage, currentPage);
